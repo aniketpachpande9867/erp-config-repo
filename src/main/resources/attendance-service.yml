@@ -1,0 +1,21 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: attendance-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/erp_attendance
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+attendance:
+  checkin:
+    start-time: "09:00"
+    end-time: "11:00"

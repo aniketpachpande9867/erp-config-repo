@@ -1,0 +1,16 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: chatbot-service
+
+chatbot:
+  mode: hybrid          # rule-based + AI
+  ai:
+    provider: gemini    # gemini / openai / llama
+    api-key: YOUR_AI_API_KEY
+
+security:
+  jwt:
+    public-key: ERP_SUPER_SECRET_KEY_123456

@@ -1,20 +1,22 @@
-server:
-  port: 8888
-
-spring:
-  application:
-    name: config-server
-
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/aniketpachpande9867/erp-config-repo
-          default-label: main
-          clone-on-start: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: INFO
+
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
