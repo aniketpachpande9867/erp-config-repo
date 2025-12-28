@@ -13,4 +13,4 @@ chatbot:
 
 security:
   jwt:
-    public-key: ERP_SUPER_SECRET_KEY_123456
+    public-key: 2gEkSGcACElSYAK72GzjxCX4/QTr1kKvDWZXbh2I5Zj2SYBUL3HX1rGYnnfP91L7cEwAHW61eX2C6e2XvMLAeQ==
