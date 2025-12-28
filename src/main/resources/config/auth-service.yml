@@ -4,3 +4,20 @@ server:
 spring:
   application:
     name: auth-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/erp_auth
+    username: postgres
+    password: Aniket9867
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+jwt:
+  secret: 2gEkSGcACElSYAK72GzjxCX4/QTr1kKvDWZXbh2I5Zj2SYBUL3HX1rGYnnfP91L7cEwAHW61eX2C6e2XvMLAeQ==
+  expiration: 900000        # 15 minutes
+  refresh-expiration: 604800000 # 7 days

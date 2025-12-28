@@ -1,4 +1,10 @@
+server:
+  port: 8888
+
 spring:
+  application:
+    name: config-server
+
   profiles:
     active: native
 
@@ -7,3 +13,9 @@ spring:
       server:
         native:
           search-locations: classpath:/config
+
+management:
+  endpoints:  
+    web:
+      exposure:
+        include: "*"
