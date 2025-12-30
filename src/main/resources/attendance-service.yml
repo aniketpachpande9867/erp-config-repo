@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/erp_attendance
     username: postgres
-    password: postgres
+    password: Aniket9867
 
   jpa:
     hibernate:

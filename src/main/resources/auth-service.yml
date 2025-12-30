@@ -21,3 +21,7 @@ jwt:
   secret: 2gEkSGcACElSYAK72GzjxCX4/QTr1kKvDWZXbh2I5Zj2SYBUL3HX1rGYnnfP91L7cEwAHW61eX2C6e2XvMLAeQ==
   expiration: 900000        # 15 minutes
   refresh-expiration: 604800000 # 7 days
+  
+  jwt:
+    private-key: <BASE64_PRIVATE_KEY>
+    public-key: <BASE64_PUBLIC_KEY>
